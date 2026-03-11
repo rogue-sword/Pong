@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ceu771rqxpk0b"]
+
+[ext_resource type="PackedScene" uid="uid://bkadht57160lf" path="res://scenes/paddle.tscn" id="1_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://bkgsgplmdrdk4" path="res://scenes/ball.tscn" id="3_vcsgt"]
+
+[node name="Main" type="Node2D" unique_id=367407761]
+
+[node name="ball" parent="." unique_id=1422220872 instance=ExtResource("3_vcsgt")]
+
+[node name="paddle" parent="." unique_id=940982946 instance=ExtResource("1_0bbpv")]
+position = Vector2(-5637, 18)
+
+[node name="paddle2" parent="." unique_id=651314347 instance=ExtResource("1_0bbpv")]
+position = Vector2(5640, 18)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=201835477]
+zoom = Vector2(0.1, 0.1)
